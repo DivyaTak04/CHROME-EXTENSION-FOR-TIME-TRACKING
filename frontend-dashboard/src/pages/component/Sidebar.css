@@ -1,0 +1,85 @@
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  background: rgba(240, 230, 140, 0.4); /* semi-transparent soft gradient */
+  border-right: 1px solid #ff6f61; /* border color matching the light theme */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical center */
+  gap: 30px; /* space between icons */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px); /* optional glass effect */
+  transition: background 0.3s, border 0.3s;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #2c3e50; /* Darker color for better contrast in light mode */
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  color: #ff6f61; /* Color change on hover */
+}
+
+.icon-btn.active {
+  color: #ff6f61; /* Active icon color */
+}
+
+/* Dark Mode */
+.dark-mode .sidebar {
+  background: rgba(58, 28, 13, 0.8); /* Darker semi-transparent background */
+  border-color: #ff6f61; /* Border color matching the dark theme */
+}
+
+.dark-mode .icon-btn {
+  background-color: transparent; /* Keep it transparent for dark mode */
+  color: #ffeef5; /* Light color for better visibility */
+}
+
+.dark-mode .icon-btn:hover {
+  color: #ffb27d; /* Lighter color on hover */
+}
+
+.dark-mode .icon-btn.active {
+  color: #ff914d; /* Active icon color in dark mode */
+}
+
+.logout-btn {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--logout-color);
+}
+
+.logout-btn:hover {
+  transform: scale(1.2);
+  color: #6a11cb; /* Color change on hover */
+}
+
+.logout-btn.active {
+  color: #6a11cb; /* Active logout button color */
+}
+
+/* Light mode */
+body.light-mode {
+  --sidebar-bg: rgba(240, 230, 140, 0.4); /* Light mode sidebar background */
+  --icon-color: #2c3e50; /* Icon color for light mode */
+  --logout-color: #e74c3c; /* Logout button color for light mode */
+}
+
+/* Dark mode */
+body.dark-mode {
+  --sidebar-bg: rgba(58, 28, 13, 0.8); /* Dark mode sidebar background */
+  --icon-color: #ffeef5; /* Icon color for dark mode */
+  --logout-color: #ff4d4d; /* Logout button color for dark mode */
+}
