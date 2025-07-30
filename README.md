@@ -1,17 +1,4 @@
-# CHROME EXTENSION FOR TIME TRACKIING
-"COMPANY": CODTECH IT SOLUTIONS
-
-"NAME": DIVYA TAK
-
-"INTERN ID": CT08DN804
-
-"DOMAIN": FULL STACK DEVELOPMENT
-
-"DURATION": 8 WEEK
-
-"MENTOR": NEELA SANTOSH
-
-# ⏱️ Time Tracker Chrome Extension
+# CHROME EXTENSION FOR TIME TRACKIING ⏱️
 A Productivity-focused Chrome Extension that tracks the user's time spent on different websites with a full-stack backend using Node.js, Express, and MongoDB, along with a React.js dashboard to visualize user analytics.
 
 ## 🚀 Features
